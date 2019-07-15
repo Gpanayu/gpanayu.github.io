@@ -97,7 +97,8 @@
     .photo_and_description {
         display: grid;
         grid-template-columns: 300px 500px;
-        justify-content: center;	grid-column-gap: 25px;
+        justify-content: center;	
+        grid-column-gap: 25px;
     }
     }
     @media screen and (max-width: 979px)  {
@@ -116,6 +117,26 @@
         padding: 10px;
     }
     }
+    @media screen and (min-width: 980px)  {
+    .photo_and_intro {
+        display: grid;
+        grid-template-columns: 300px 500px;
+        justify-content: center;	
+        grid-column-gap: 25px;
+    }
+    }
+    .pubs {
+      margin-left: 40px;
+    }
+
+    .edu {
+      margin-left: 40px;
+    }
+
+    .workEx {
+      margin-left: 40px;
+    }
+  
     #resumeButton {
         border: 1px solid black;
         border-radius: 11px;
@@ -206,13 +227,60 @@ div.tocify {
 <div class="fluid-row" id="header">
 <h1 class="title toc-ignore">Panayu Keelawat</h1>
 </div>
-<div id="about" class="section level2">
-    <p>Hello! My name is Panayu Keelawat. I am a fresh graduate engineer located in Bangkok.</p>
-    <p>I received B. Eng in Computer Engineering from Chulalongkorn University in 2019. Currently, I am working as a software engineer (trainee) at Refinitiv.</p>
-    <p>I am interested in all sorts of technology-related stuff, especially when it comes to machine learning. Playing and learning insights from data can't be more enjoyable. Learning to understand them with cutting-edge research is a </p>
+<div id="about" class="photo_and_intro section level2">
+    <img src="myprofilepic.jpg"/>
+    <p>Hello! My name is Panayu Keelawat. I am a fresh graduate engineer located in Bangkok. <br><br>
+    I received my B. Eng in Computer Engineering from Chulalongkorn University, Thailand, in 2019. 
+    I worked with <a href="https://www.cp.eng.chula.ac.th/en/about/faculty/boonsermk/">Prof. Boonserm Kijsirikul</a> in my senior year. Currently, I am a software engineer (trainee) at Refinitiv. <br><br>
+    I am interested in all sorts of technology-related stuff, especially when it comes to machine learning. Playing and learning insights from data can't be more enjoyable. 
+      Learning to understand them with cutting-edge research is a pleasant task for me. <br><br>
+    Apart from work, I enjoy jogging. Also, I am a badminton lover.</p>
+</div>
+<div>
+  <h2>Education</h2>
+  <div class="edu">
+    <h4>Chulalongkorn University | Aug 2015 - May 2019</h4>
+    <p>Bachelor of Engineering, Computer Engineering | GPAX: 3.90/4.00</p>
+  </div>
+</div>
+<div>
+  <h2>Work Experience</h2>
+  <div class="workEx">
+    <div>
+        <h4>Refinitiv | Thomson Reuters | Jun 2019 - Present</h4>
+        <p>Software Engineer (Trainee)</p>
+        <ul>
+          <li>Develop readable, maintainable and scalable code for interbank post-trade foreign exchange infrastructure.</li>
+          <li>Integrate web service with Thomson Reuters' existing modules.</li>
+          <li>Work in team using agile methodology.</li>
+          <li>Java, C#, Gradle, Jenkins, SQL, NodeJS, HTML, CSS, JavaScript and XML</li>
+        </ul>
+    </div>
+    <div>
+      <h4>Faculty of Engineering | Chulalongkorn University | Feb 2019 - May 2019</h4>
+      <p>Teaching Assistant</p>
+      <ul>
+        <li>Assisted Assoc. Prof. Atiwong Suchato teaching 2110221 Computer Engineering Essentials</li>
+        <li>Prepared materials as well as graded several assignments.</li>
+        <li>Helped students with their in-class activities.</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Numao Laboratory | Osaka University | May 2018 - Jul 2018</h4>
+      <p>Research Intern</p>
+    </div>
+  </div>
+</div>
+<div>
+  <h2>Publications</h2>
+  <div class="pubs">
+    <h4><a href="https://ieeexplore.ieee.org/document/8696054/references#references"><b>Subject-Independent Emotion Recognition During Music Listening Based on EEG Using Deep Convolutional Neural Networks</b></a></h4>
+    <p><b>Panayu Keelawat</b>, Nattapong Thammasan, Boonserm Kijsirikul, Masayuki Numao</p>
+    <p>IEEE International Colloquium on Signal Processing & Its Applications (CSPA), 2019</p>
+  </div>
 </div>
 <div id="projects" class="section level2">
-<h2>Projects</h2>
+<h2>Selected Projects</h2>
 <div class="project_list">
 <div>
 <h3>

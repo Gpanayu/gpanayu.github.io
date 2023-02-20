@@ -1,110 +1,761 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="Hello! My name is Panayu Keelawat. This is my personal website." />
-    <meta name="google-site-verification" content="cV3f7itw3z3tTPy1vWqog70J2NMuLb2F7NBjTAyUNW4" />
-    <title>Panayu Keelawat</title>
+<html lang="en">
 
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      
-      ga('create', 'UA-XXXXX-Y', 'auto');
-      ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panayu Keelawat</title>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">Panayu Keelawat</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/my_images/favicon_io/favicon.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/my_images/IMG_7086.png" alt="Panayu Keelawat" width="100">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Panayu Keelawat</h1>
+
+          <p class="title">HCI Researcher</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html#about">About <span class="sr-only">(current)</span></a>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Seattle, WA, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://scholar.google.com/citations?user=YvGw6hEAAAAJ&hl=en" class="social-link" target="_blank">
+              <ion-icon name="school-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Gpanayu" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/panayu-keelawat-7534a6167/" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/panayu_k" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <!-- <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav> -->
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a new Computer Science graduate from UC San Diego. 
+            Currently, I'm working as a Software Development Engineer at the Alexa Calling Experience Team, Amazon.com, Inc.
+          </p>
+
+          <p>
+            During my M.S. degree, I worked with <a href="https://creativity.ucsd.edu/" target="_blank" class="text-link">Prof. Haijun Xia</a> to study how people describe data through language. 
+            I was also involved in studying interactions and ways to reduce frictions in online meetings. 
+            I obtained a B.Eng. in Computer Engineering from Chulalongkorn University working with <a href="https://www.cp.eng.chula.ac.th/~boonserm/" target="_blank" class="text-link">Prof. Boonserm Kijsirikul</a> 
+            focusing on emotion recognition from brainwaves during music listening.
+          </p>
+
+          <p>
+            My research lies in the field of Human-Computer Interaction, Computer-Supported Cooperative Work, 
+            Machine Learning, and Artificial Intelligence. 
+            I'm interested in learning how people behave and build tools that help us be more productive.
+          </p>
+        </section>
+
+
+        <!--
+          - publications
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Publications</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <a class="service-link-block" href="https://www.proquest.com/openview/4fbd70771e933a421aa5c64e5bfaee6d" target="_blank">
+                <div class="service-icon-box">
+                  <img src="./assets/my_images/pubIcons/Slide1.png" width="180">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Towards understanding text-data connection in documents through the lens of data operations</h4>
+  
+                  <p class="service-item-italics">
+                    M.S. Thesis
+                  </p>
+  
+                  <p class="service-item-text">
+                    <span class="span-name-highlight">Panayu Keelawat</span>
+                  </p>
+                </div>
+              </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html#research">Research</a>
+
+            <li class="service-item">
+
+              <a class="service-link-block" href="https://www.mdpi.com/1424-8220/21/5/1678" target="_blank">
+                <div class="service-icon-box">
+                  <img src="./assets/my_images/pubIcons/Slide2.png" width="180">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">A comparative study of window size and channel arrangement on EEG-emotion recognition using deep CNN</h4>
+  
+                  <p class="service-item-italics">
+                    Sensors
+                  </p>
+  
+                  <p class="service-item-text">
+                    <span class="span-name-highlight">Panayu Keelawat</span>, Nattapong Thammasan, Masayuki Numao, and Boonserm Kijsirikul
+                  </p>
+                </div>
+              </a>
+
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html#project">Project</a>
+            
+            <li class="service-item">
+
+              <a class="service-link-block" href="https://ieeexplore.ieee.org/abstract/document/8696054" target="_blank">
+                <div class="service-icon-box">
+                  <img src="./assets/my_images/pubIcons/Slide3.png" width="180">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Subject-Independent Emotion Recognition During Music Listening Based on EEG Using Deep Convolutional Neural Networks</h4>
+  
+                  <p class="service-item-italics">
+                    IEEE CSPA
+                  </p>
+  
+                  <p class="service-item-text">
+                    <span class="span-name-highlight">Panayu Keelawat</span>, Nattapong Thammasan, Boonserm Kijsirikul, and Masayuki Numao
+                  </p>
+                </div>
+              </a>
+
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html#contact">Contact</a>
-            </li>
+
           </ul>
-        </div>
-      </nav>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-    <div style="padding: 1rem;">
-      <div id="profilePic" class="text-center">
-        <img src="myprofilepic2.jpg" style="width: 150pt;" class="rounded-circle shadow"/>
-      </div>
-      <div id="about" style="margin-top: 3rem; margin-left: 3rem; margin-right: 3rem;">
-        <h4><b>About</b></h4>
-        <p>
-          Hello! My name is Panayu Keelawat. I'm studying M. S. in Computer Science at UC San Diego. My research interests include Human-Computer Interaction, Computer Vision and Machine Learning. Currently, I am working with <a href="https://haijunxia.ucsd.edu/">Prof. Haijun Xia</a> of <a href="https://creativity.ucsd.edu/">the Creativity Lab</a> to improve online meetings.<br><br>
-          I received my B. Eng in Computer Engineering from Chulalongkorn University, Thailand, in 2019. 
-          I worked with <a href="https://www.cp.eng.chula.ac.th/en/about/faculty/boonsermk/" target="_blank">Prof. Boonserm Kijsirikul</a> during my undergraduate degree focusing on machine learning with brainwaves. <br><br>
-          Apart from work, I enjoy jogging. Also, I'm a badminton lover.
-        </p>
-      </div>
-      <div id="resume" class="bg-light" style="margin-left: 3rem; margin-right: 3rem;">
-        <p>You can download my C.V. from this <a href="./pdf/cv.pdf" target="_blank">link.</a></p>
-      </div>
-      <div id="research" style="margin-top: 3rem; margin-left: 3rem; margin-right: 3rem;">
-        <h4><b>Research</b></h4>
-        <div style="background-color: #E2FFDD; padding: 10px;">
-          <p style="font-size: 15pt; display: flex; align-items: center;"><img src="./eegproj.jpg" height="150" style="vertical-align: middle; margin-right: 15px;" /><span><b>EEG-Based Emotion Recognition Using Deep Learning</b></span></p>
-          <p>
-            <div class="pubs">
-              <p style="margin-bottom: 0px;"><b>A Comparative Study of Window Size and Channel Arrangement on EEG-Emotion Recognition Using Deep CNN</b> | [ <a href="https://www.mdpi.com/1424-8220/21/5/1678">Publisher</a> ]</p>
-              <p style="margin-bottom: 0px; font-size: 10pt;"><b>Panayu Keelawat</b>, Nattapong Thammasan, Masayuki Numao, Boonserm Kijsirikul</p>
-              <p style="font-size: 10pt;"><i>Sensors</i>, 2021</p>
-            </div>
-            <div class="pubs">
-              <p style="margin-bottom: 0px;"><b>Subject-Independent Emotion Recognition During Music Listening Based on EEG Using Deep Convolutional Neural Networks</b> | [ <a href="https://ieeexplore.ieee.org/document/8696054">Publisher</a> ]</p>
-              <p style="margin-bottom: 0px; font-size: 10pt;"><b>Panayu Keelawat</b>, Nattapong Thammasan, Boonserm Kijsirikul, Masayuki Numao</p>
-              <p style="font-size: 10pt;"><i>In Proceedings of CSPA</i>, 2019</p>
-            </div>
-          </p>
-        </div>
-      </div>
-      <div id="project" style="margin-top: 3rem; margin-left: 3rem; margin-right: 3rem;">
-        <h4><b>Project</b></h4>
-        <div style="background-color: #CCE5FF; padding: 10px;">
-          <p style="font-size: 15pt; display: flex; align-items: center;"><img src="./ece225aproj.jpg" height="150" style="vertical-align: middle; margin-right: 15px;" /><span><b>E-Commerce Customer Clustering</b> | [ <a href="./pdf/ECE225AProject.pdf">Write-Up</a> ] | [ <a href="https://www.kaggle.com/panayu/e-commerce-rfm-clustering">Notebook</a> ]</span></p>
-          <p>
-            <div class="proj">
-              <p style="margin-bottom: 0px; font-size: 10pt;">&#8226 Final project of ECE 225A at UCSD.</p>
-              <p style="margin-bottom: 0px; font-size: 10pt;">&#8226 Constructed customer clusters using <i>k</i>-means clustering and RFM analysis based on silhouette score.</p>
-              <p style="margin-bottom: 0px; font-size: 10pt;">&#8226 Analyzed customer behaviors from obtained clusters.</p>
-            </div>
-          </p>
-        </div>
-      </div>
-      <div id="contact" style="margin-top: 3rem; margin-left: 3rem; margin-right: 3rem;">
-        <h4><b>Contact</b></h4>
-        <p>
-          <p style="margin: 0px 0px 5px 0px"><strong>Email: </strong>keelawatpanayu (at) gmail (dot) com</p>
-          <p style="margin: 0px 0px 5px 0px"><strong>GitHub: </strong> <a href="https://github.com/Gpanayu" target="_blank">Gpanayu </a></p>
-          <p style="margin: 0px 0px 5px 0px"><img src="./linkedinLogo.png" style="vertical-align: middle;" width="20" height="20" /> <a href="https://www.linkedin.com/in/panayu-keelawat-7534a6167">Linkedin</a></p>
-          <p style="margin: 0px 0px 5px 0px"><img src="./googleScholarLogo.png" width="20" height="20" style="vertical-align: middle;" /> <a href="https://scholar.google.co.th/citations?hl=en&user=YvGw6hEAAAAJ">Google Scholar</a></p>
-        </p>
-      </div>
-    </div>
-  </body>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>

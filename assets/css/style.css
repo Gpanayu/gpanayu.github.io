@@ -1900,4 +1900,43 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+
+
+
+  .service-card{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+
+  .pub-actions{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .pub-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--jet);
+    color: var(--white-2);
+    background: transparent;
+  }
+
+  .pub-btn:hover{
+    transform: translateY(-1px);
+  }
+
+  .pub-btn-secondary{
+    border-style: dashed;
+  }
+
+
 }

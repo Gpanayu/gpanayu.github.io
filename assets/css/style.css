@@ -587,6 +587,14 @@ section {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--rust);
+  margin-bottom: 4px;
+}
+
+.teaching-role {
+  font-family: var(--ff-serif);
+  font-style: italic;
+  font-size: 14.5px;
+  color: var(--ink-faint);
   margin-bottom: 14px;
 }
 

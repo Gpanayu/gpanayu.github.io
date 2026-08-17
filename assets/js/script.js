@@ -29,3 +29,12 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
 
 revealEls.forEach((el) => revealObserver.observe(el));
+
+// publication thumbnails: play the gif only while the row is hovered
+document.querySelectorAll('.pub-thumb img[data-gif]').forEach((img) => {
+  const entry = img.closest('.pub-entry');
+  const { gif, poster } = img.dataset;
+
+  entry.addEventListener('mouseenter', () => { img.src = gif; });
+  entry.addEventListener('mouseleave', () => { img.src = poster; });
+});

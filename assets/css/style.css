@@ -408,7 +408,7 @@ section {
   gap: 6px;
   padding-block: 26px;
   border-top: 1px solid var(--line-soft);
-  transition: padding-left 0.3s var(--ease);
+  transition: transform 0.3s var(--ease);
 }
 
 .timeline-item:last-child {
@@ -416,7 +416,7 @@ section {
 }
 
 .timeline-item:hover {
-  padding-left: 10px;
+  transform: translateX(10px);
 }
 
 .timeline-year {

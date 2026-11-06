@@ -23,10 +23,8 @@
   --accent-2: hsl(205, 60%, 32%);
   --accent-soft: hsla(205, 74%, 21%, 0.07);
 
-  /* type */
-  --ff-serif: 'Newsreader', 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  /* type — one family throughout, carried by weight and size */
   --ff-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-  --ff-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   /* layout */
   --wrap: 1040px;
@@ -93,16 +91,42 @@ img { max-width: 100%; display: block; }
   padding: 12px 18px;
   background: var(--ink);
   color: #fff;
-  font-family: var(--ff-mono);
+  font-family: var(--ff-sans);
   font-size: 13px;
 }
 .skip-link:focus { left: 0; }
 
-.glyph {
-  display: inline-block;
-  font-size: 0.85em;
-  transform: translateY(-1px);
+/*-----------------------------------*\
+  #BUTTONS
+  every outbound link is a button, hover fills with Prussian blue
+\*-----------------------------------*/
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line-strong);
+  border-radius: 2px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--ff-sans);
+  font-size: 12.5px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: color 0.22s var(--ease), background 0.22s var(--ease),
+    border-color 0.22s var(--ease);
 }
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn:active { transform: translateY(1px); }
 
 /*-----------------------------------*\
   #LAYOUT SHELL
@@ -137,7 +161,7 @@ img { max-width: 100%; display: block; }
   flex: 0 0 auto;
   background: var(--accent);
   color: #fff;
-  font-family: var(--ff-mono);
+  font-family: var(--ff-sans);
   font-size: 11.5px;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -154,7 +178,7 @@ img { max-width: 100%; display: block; }
 }
 
 .site-nav a {
-  font-family: var(--ff-mono);
+  font-family: var(--ff-sans);
   font-size: 11.5px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -212,31 +236,14 @@ section {
 }
 
 .section-head {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: clamp(32px, 5vw, 48px);
-}
-
-.section-head::after {
-  content: "";
-  flex: 1 1 auto;
-  height: 1px;
-  background: var(--line);
-  margin-left: 4px;
-}
-
-.section-num {
-  font-family: var(--ff-mono);
-  font-size: 11.5px;
-  letter-spacing: 0.1em;
-  color: var(--accent);
+  margin-bottom: clamp(28px, 4vw, 40px);
 }
 
 .section-head h2 {
-  font-family: var(--ff-serif);
-  font-size: clamp(26px, 3.4vw, 34px);
-  letter-spacing: -0.015em;
+  font-size: clamp(21px, 2.5vw, 27px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.022em;
 }
 
 .js .reveal {
@@ -276,7 +283,7 @@ section {
   gap: 8px 24px;
   padding-bottom: 14px;
   border-bottom: 1px solid var(--line);
-  font-family: var(--ff-mono);
+  font-family: var(--ff-sans);
   font-size: 11.5px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -285,17 +292,11 @@ section {
 
 .hero-name {
   grid-area: name;
-  font-family: var(--ff-serif);
-  font-weight: 400;
-  font-size: clamp(46px, 8.4vw, 92px);
-  line-height: 0.94;
-  letter-spacing: -0.028em;
-  margin-top: 4px;
-}
-
-.hero-name em {
-  font-style: italic;
-  color: var(--accent);
+  font-weight: 500;
+  font-size: clamp(32px, 4.8vw, 46px);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+  margin-top: 6px;
 }
 
 .hero-body {
@@ -305,7 +306,7 @@ section {
 }
 
 .hero-role {
-  font-family: var(--ff-mono);
+  font-family: var(--ff-sans);
   font-size: 11.5px;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -323,24 +324,7 @@ section {
 .hero-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 24px;
-}
-
-.hero-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-family: var(--ff-mono);
-  font-size: 12.5px;
-  color: var(--ink-2);
-  padding-bottom: 3px;
-  border-bottom: 1px solid var(--line-strong);
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
-}
-
-.hero-links a:hover {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  gap: 10px;
 }
 
 .hero-portrait {
@@ -368,21 +352,33 @@ section {
   filter: grayscale(0) contrast(1);
 }
 
-
 /*-----------------------------------*\
   #EXPERIENCE
 \*-----------------------------------*/
 
 .experience-groups {
   display: grid;
-  gap: clamp(40px, 6vw, 60px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(32px, 5vw, 56px) clamp(32px, 5vw, 64px);
+  align-items: start;
+}
+
+/* inside the two-column layout the year sits above the entry */
+.experience-groups .timeline-item {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  padding-block: 20px;
+}
+
+.experience-groups .timeline-year {
+  padding-top: 0;
 }
 
 .timeline-group-title {
-  font-family: var(--ff-serif);
-  font-weight: 500;
-  font-size: 17px;
-  letter-spacing: 0.005em;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
   color: var(--ink);
   padding-bottom: 10px;
   border-bottom: 1px solid var(--ink);
@@ -405,19 +401,19 @@ section {
 }
 
 .timeline-year {
-  font-family: var(--ff-mono);
   font-size: 11.5px;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
   color: var(--ink-3);
   padding-top: 5px;
   white-space: nowrap;
 }
 
 .timeline-body h4 {
-  font-family: var(--ff-serif);
-  font-weight: 500;
-  font-size: clamp(18px, 1.9vw, 20px);
-  letter-spacing: -0.005em;
+  font-weight: 600;
+  font-size: 16.5px;
+  letter-spacing: -0.012em;
   margin-bottom: 3px;
 }
 
@@ -464,24 +460,15 @@ section {
 
 .pub-entry {
   display: grid;
-  grid-template-columns: auto clamp(132px, 16vw, 176px) minmax(0, 1fr);
+  grid-template-columns: clamp(140px, 17vw, 190px) minmax(0, 1fr);
   gap: clamp(14px, 2.4vw, 26px);
-  align-items: center;
+  align-items: start;
   padding-block: 20px;
   border-top: 1px solid var(--line);
 }
 
 .pub-entry:last-child {
   border-bottom: 1px solid var(--line);
-}
-
-.pub-no {
-  align-self: start;
-  padding-top: 3px;
-  font-family: var(--ff-mono);
-  font-size: 11.5px;
-  letter-spacing: 0.04em;
-  color: var(--ink-3);
 }
 
 .pub-thumb {
@@ -512,18 +499,17 @@ section {
 }
 
 .pub-text h3 {
-  font-family: var(--ff-serif);
-  font-weight: 500;
-  font-size: clamp(17px, 1.9vw, 20px);
-  line-height: 1.32;
-  letter-spacing: -0.005em;
+  font-weight: 600;
+  font-size: clamp(15.5px, 1.7vw, 17.5px);
+  line-height: 1.42;
+  letter-spacing: -0.008em;
   margin-bottom: 7px;
 }
 
 .pub-venue {
-  font-family: var(--ff-mono);
-  font-size: 11.5px;
-  letter-spacing: 0.08em;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--accent);
   margin-bottom: 6px;
@@ -543,27 +529,15 @@ section {
 .pub-actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 18px;
+  gap: 8px;
 }
 
-.pub-actions a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  font-family: var(--ff-mono);
-  font-size: 12px;
-  color: var(--ink-2);
-  padding-bottom: 2px;
-  border-bottom: 1px solid var(--line-strong);
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+.pub-actions .btn {
+  padding: 7px 12px;
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
 }
-
-.pub-actions a:hover {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
-}
-
-
 
 /*-----------------------------------*\
   #TEACHING
@@ -576,18 +550,18 @@ section {
 }
 
 .teaching-group-title {
-  font-family: var(--ff-serif);
-  font-weight: 500;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 15.5px;
+  letter-spacing: -0.005em;
   color: var(--ink);
   padding-bottom: 10px;
   border-bottom: 1px solid var(--ink);
 }
 
 .teaching-role {
-  font-family: var(--ff-mono);
-  font-size: 11.5px;
-  letter-spacing: 0.08em;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-3);
   padding-top: 14px;
@@ -609,21 +583,22 @@ section {
 }
 
 .course-code {
-  font-family: var(--ff-mono);
-  font-size: 11.5px;
-  letter-spacing: 0.04em;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   color: var(--ink-3);
 }
 
 .course-name {
-  font-family: var(--ff-serif);
-  font-size: 16.5px;
+  font-size: 15.5px;
   color: var(--ink);
 }
 
 .course-term {
-  font-family: var(--ff-mono);
-  font-size: 11.5px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
   color: var(--ink-3);
   text-align: right;
   white-space: nowrap;
@@ -642,22 +617,28 @@ section {
   gap: 10px 24px;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--ff-mono);
+  font-family: var(--ff-sans);
   font-size: 11.5px;
   letter-spacing: 0.03em;
   color: var(--ink-3);
 }
 
-.site-footer a {
+.site-footer .btn {
+  padding: 8px 14px;
+  font-size: 10.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
   color: var(--ink-3);
-  transition: color 0.2s var(--ease);
 }
-
-.site-footer a:hover { color: var(--accent); }
 
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
+
+@media (max-width: 920px) {
+
+  .experience-groups { grid-template-columns: minmax(0, 1fr); }
+}
 
 @media (max-width: 860px) {
 
@@ -676,10 +657,10 @@ section {
     justify-self: start;
   }
 
-  .hero-name { font-size: clamp(44px, 11vw, 76px); }
+  .hero-name { font-size: clamp(30px, 8.4vw, 40px); }
 
   .pub-entry {
-    grid-template-columns: auto clamp(112px, 20vw, 150px) minmax(0, 1fr);
+    grid-template-columns: clamp(112px, 20vw, 150px) minmax(0, 1fr);
   }
 }
 
@@ -721,7 +702,7 @@ section {
   .timeline-year { padding-top: 0; }
 
   .pub-entry {
-    grid-template-columns: auto clamp(96px, 26vw, 132px) minmax(0, 1fr);
+    grid-template-columns: clamp(96px, 26vw, 132px) minmax(0, 1fr);
     align-items: start;
     padding-block: 18px;
   }
@@ -736,13 +717,11 @@ section {
 
 @media (max-width: 520px) {
 
-  .pub-no { display: none; }
-
   .pub-entry {
     grid-template-columns: clamp(84px, 30vw, 116px) minmax(0, 1fr);
   }
 
-  .hero-links { gap: 6px 18px; }
+  .hero-links { gap: 8px; }
 
   .site-footer { font-size: 11px; }
 }

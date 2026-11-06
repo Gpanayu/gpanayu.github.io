@@ -20,7 +20,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -51,10 +51,7 @@
         <span>Ph.D. · Virginia Tech</span>
       </div>
 
-      <h1 class="hero-name">
-        Panayu<br>
-        <em>Keelawat</em>
-      </h1>
+      <h1 class="hero-name">Panayu Keelawat</h1>
 
       <div class="hero-body">
         <p class="hero-role">Human&#8202;–&#8202;AI Interaction Researcher</p>
@@ -67,9 +64,9 @@
         </p>
 
         <ul class="hero-links">
-          <li><a href="https://scholar.google.com/citations?user=YvGw6hEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar<span class="glyph">↗</span></a></li>
-          <li><a href="https://github.com/Gpanayu" target="_blank" rel="noopener noreferrer">GitHub<span class="glyph">↗</span></a></li>
-          <li><a href="https://www.linkedin.com/in/panayu-keelawat-7534a6167/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="glyph">↗</span></a></li>
+          <li><a class="btn" href="https://scholar.google.com/citations?user=YvGw6hEAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a></li>
+          <li><a class="btn" href="https://github.com/Gpanayu" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a class="btn" href="https://www.linkedin.com/in/panayu-keelawat-7534a6167/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
       </div>
 
@@ -80,44 +77,10 @@
 
     <section class="experience reveal" id="experience">
       <div class="section-head">
-        <span class="section-num">01</span>
         <h2>Experience</h2>
       </div>
 
       <div class="experience-groups">
-
-        <div class="timeline-group">
-          <h3 class="timeline-group-title">Employment</h3>
-
-          <ol class="timeline">
-            <li class="timeline-item">
-              <span class="timeline-year">Aug 2022 — Aug 2024</span>
-              <div class="timeline-body">
-                <h4>Software Development Engineer</h4>
-                <p class="timeline-place">Amazon Alexa · Seattle, WA</p>
-                <p>Re-architected and maintained the core Alexa calling platform serving millions of calls a day, enabling LLM-driven experiences with Alexa+. Let customers place and drop in on calls through GUI or voice, with call history synced to the Alexa app.</p>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <span class="timeline-year">Jun 2019 — May 2020</span>
-              <div class="timeline-body">
-                <h4>Software Engineer</h4>
-                <p class="timeline-place">LSEG · Bangkok, Thailand</p>
-                <p>Built and deployed DTaaS, a cloud platform for inter-bank FX deal tracking moving over $425B in daily transaction volume. Gave traders a single view to monitor, track, and audit deals.</p>
-              </div>
-            </li>
-
-            <li class="timeline-item">
-              <span class="timeline-year">May 2018 — Jul 2018</span>
-              <div class="timeline-body">
-                <h4>Research Intern</h4>
-                <p class="timeline-place">The University of Osaka · Osaka, Japan</p>
-                <p>EEG-based emotion recognition with deep convolutional neural networks.</p>
-              </div>
-            </li>
-          </ol>
-        </div>
 
         <div class="timeline-group">
           <h3 class="timeline-group-title">Education</h3>
@@ -155,19 +118,50 @@
           </ol>
         </div>
 
+        <div class="timeline-group">
+          <h3 class="timeline-group-title">Employment</h3>
+
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-year">Aug 2022 — Aug 2024</span>
+              <div class="timeline-body">
+                <h4>Software Development Engineer</h4>
+                <p class="timeline-place">Amazon Alexa · Seattle, WA</p>
+                <p>Re-architected and maintained the core Alexa calling platform serving millions of calls a day, enabling LLM-driven experiences with Alexa+. Let customers place and drop in on calls through GUI or voice, with call history synced to the Alexa app.</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-year">Jun 2019 — May 2020</span>
+              <div class="timeline-body">
+                <h4>Software Engineer</h4>
+                <p class="timeline-place">LSEG · Bangkok, Thailand</p>
+                <p>Built and deployed DTaaS, a cloud platform for inter-bank FX deal tracking moving over $425B in daily transaction volume. Gave traders a single view to monitor, track, and audit deals.</p>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <span class="timeline-year">May 2018 — Jul 2018</span>
+              <div class="timeline-body">
+                <h4>Research Intern</h4>
+                <p class="timeline-place">The University of Osaka · Osaka, Japan</p>
+                <p>EEG-based emotion recognition with deep convolutional neural networks.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
       </div>
     </section>
 
     <section class="publications reveal" id="publications">
       <div class="section-head">
-        <span class="section-num">02</span>
         <h2>Publications</h2>
       </div>
 
-      <ol class="pub-index">
+      <ul class="pub-index">
 
         <li class="pub-entry">
-          <span class="pub-no">01</span>
           <div class="pub-thumb">
             <img src="./assets/my_images/pubIcons/flexguard.png" alt="A lifter wearing the FlexGuard wearable performing a lateral raise with dumbbells" loading="lazy">
           </div>
@@ -176,13 +170,12 @@
             <p class="pub-venue">IMWUT (UbiComp) 2026</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span>, Darshan Nere, Jyotshna Bali, Rezky Dwisantika, Yogesh Phalak, Ardalan Kahak, Anekan Naicker, Liang He, Suyi Li, Yan Chen</p>
             <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2509.18662" target="_blank" rel="noopener noreferrer">Paper<span class="glyph">↗</span></a>
+              <a class="btn" href="https://arxiv.org/abs/2509.18662" target="_blank" rel="noopener noreferrer">Paper</a>
             </div>
           </div>
         </li>
 
         <li class="pub-entry">
-          <span class="pub-no">02</span>
           <div class="pub-thumb">
             <img data-gif="./assets/my_images/gifs/gifCanary.gif" data-poster="./assets/my_images/gifs/posters/gifCanary-poster.png" src="./assets/my_images/gifs/posters/gifCanary-poster.png" alt="The Help Ladder thumbnail" loading="lazy">
           </div>
@@ -191,14 +184,13 @@
             <p class="pub-venue">VL/HCC 2026</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span>, Sriram Narlapati, Darshan Nere, Sangwook Lee, Griffin Ogura, Xinran Adeline Li, Sang Won Lee, Yan Chen</p>
             <div class="pub-actions">
-              <a href="https://arxiv.org/abs/2607.23031" target="_blank" rel="noopener noreferrer">Paper<span class="glyph">↗</span></a>
-              <a href="https://youtu.be/-eTyCazJ6-g" target="_blank" rel="noopener noreferrer">Demo video<span class="glyph">↗</span></a>
+              <a class="btn" href="https://arxiv.org/abs/2607.23031" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="btn" href="https://youtu.be/-eTyCazJ6-g" target="_blank" rel="noopener noreferrer">Demo video</a>
             </div>
           </div>
         </li>
 
         <li class="pub-entry">
-          <span class="pub-no">03</span>
           <div class="pub-thumb">
             <img data-gif="./assets/my_images/gifs/dynamite.gif" data-poster="./assets/my_images/gifs/posters/dynamite-poster.png" src="./assets/my_images/gifs/posters/dynamite-poster.png" alt="Dynamite thumbnail" loading="lazy">
           </div>
@@ -207,14 +199,13 @@
             <p class="pub-venue">VL/HCC 2025</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span>, David Barron, Kaushik Narasimhan, Daniel Manesh, Xiaohang Tang, Xi Chen, Sang Won Lee, Yan Chen</p>
             <div class="pub-actions">
-              <a href="https://ieeexplore.ieee.org/document/11303527" target="_blank" rel="noopener noreferrer">Paper<span class="glyph">↗</span></a>
-              <a href="https://youtu.be/1w7JcImJ4fk" target="_blank" rel="noopener noreferrer">Demo video<span class="glyph">↗</span></a>
+              <a class="btn" href="https://ieeexplore.ieee.org/document/11303527" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="btn" href="https://youtu.be/1w7JcImJ4fk" target="_blank" rel="noopener noreferrer">Demo video</a>
             </div>
           </div>
         </li>
 
         <li class="pub-entry">
-          <span class="pub-no">04</span>
           <div class="pub-thumb">
             <img data-gif="./assets/my_images/gifs/InstructAR.gif" data-poster="./assets/my_images/gifs/posters/InstructAR-poster.png" src="./assets/my_images/gifs/posters/InstructAR-poster.png" alt="InstructAR thumbnail" loading="lazy">
           </div>
@@ -223,14 +214,13 @@
             <p class="pub-venue">UIST Poster 2024</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span>, Ryo Suzuki</p>
             <div class="pub-actions">
-              <a href="https://dl.acm.org/doi/abs/10.1145/3672539.3686321" target="_blank" rel="noopener noreferrer">Paper<span class="glyph">↗</span></a>
-              <a href="https://youtu.be/CcvE_scvmog?si=n1EXyVTvRMPiKEu8" target="_blank" rel="noopener noreferrer">Demo video<span class="glyph">↗</span></a>
+              <a class="btn" href="https://dl.acm.org/doi/abs/10.1145/3672539.3686321" target="_blank" rel="noopener noreferrer">Paper</a>
+              <a class="btn" href="https://youtu.be/CcvE_scvmog?si=n1EXyVTvRMPiKEu8" target="_blank" rel="noopener noreferrer">Demo video</a>
             </div>
           </div>
         </li>
 
         <li class="pub-entry">
-          <span class="pub-no">05</span>
           <div class="pub-thumb">
             <img data-gif="./assets/my_images/gifs/gifForWebsite.gif" data-poster="./assets/my_images/gifs/posters/gifForWebsite-poster.png" src="./assets/my_images/gifs/posters/gifForWebsite-poster.png" alt="NBGuru thumbnail" loading="lazy">
           </div>
@@ -239,13 +229,12 @@
             <p class="pub-venue">CSCW Poster 2023</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span></p>
             <div class="pub-actions">
-              <a href="https://dl.acm.org/doi/10.1145/3584931.3607020" target="_blank" rel="noopener noreferrer">Paper<span class="glyph">↗</span></a>
+              <a class="btn" href="https://dl.acm.org/doi/10.1145/3584931.3607020" target="_blank" rel="noopener noreferrer">Paper</a>
             </div>
           </div>
         </li>
 
         <li class="pub-entry">
-          <span class="pub-no">06</span>
           <div class="pub-thumb">
             <img src="./assets/my_images/pubIcons/Slide1.png" alt="M.S. thesis thumbnail" loading="lazy">
           </div>
@@ -254,13 +243,12 @@
             <p class="pub-venue">M.S. Thesis</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span></p>
             <div class="pub-actions">
-              <a href="https://www.proquest.com/openview/4fbd70771e933a421aa5c64e5bfaee6d" target="_blank" rel="noopener noreferrer">Thesis<span class="glyph">↗</span></a>
+              <a class="btn" href="https://www.proquest.com/openview/4fbd70771e933a421aa5c64e5bfaee6d" target="_blank" rel="noopener noreferrer">Thesis</a>
             </div>
           </div>
         </li>
 
         <li class="pub-entry">
-          <span class="pub-no">07</span>
           <div class="pub-thumb">
             <img src="./assets/my_images/pubIcons/Slide2.png" alt="Sensors paper thumbnail" loading="lazy">
           </div>
@@ -269,13 +257,12 @@
             <p class="pub-venue">Sensors 2021</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span>, Nattapong Thammasan, Masayuki Numao, Boonserm Kijsirikul</p>
             <div class="pub-actions">
-              <a href="https://www.mdpi.com/1424-8220/21/5/1678" target="_blank" rel="noopener noreferrer">Paper<span class="glyph">↗</span></a>
+              <a class="btn" href="https://www.mdpi.com/1424-8220/21/5/1678" target="_blank" rel="noopener noreferrer">Paper</a>
             </div>
           </div>
         </li>
 
         <li class="pub-entry">
-          <span class="pub-no">08</span>
           <div class="pub-thumb">
             <img src="./assets/my_images/pubIcons/Slide3.png" alt="CSPA paper thumbnail" loading="lazy">
           </div>
@@ -284,17 +271,16 @@
             <p class="pub-venue">CSPA 2019</p>
             <p class="pub-authors"><span class="me">Panayu Keelawat</span>, Nattapong Thammasan, Boonserm Kijsirikul, Masayuki Numao</p>
             <div class="pub-actions">
-              <a href="https://ieeexplore.ieee.org/abstract/document/8696054" target="_blank" rel="noopener noreferrer">Paper<span class="glyph">↗</span></a>
+              <a class="btn" href="https://ieeexplore.ieee.org/abstract/document/8696054" target="_blank" rel="noopener noreferrer">Paper</a>
             </div>
           </div>
         </li>
 
-      </ol>
+      </ul>
     </section>
 
     <section class="teaching reveal" id="teaching">
       <div class="section-head">
-        <span class="section-num">03</span>
         <h2>Teaching</h2>
       </div>
 
@@ -353,7 +339,7 @@
 
   <footer class="site-footer">
     <span>© <span data-year>2026</span> Panayu Keelawat</span>
-    <a href="#top">Back to top ↑</a>
+    <a class="btn" href="#top">Back to top</a>
   </footer>
 
   <script src="./assets/js/script.js" defer></script>

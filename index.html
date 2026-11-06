@@ -12,7 +12,7 @@
   <script>document.documentElement.classList.add('js');</script>
 
   <link rel="icon" href="./assets/my_images/favicon_io/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="./assets/my_images/favicon_io/favicon.ico" sizes="32x32">
+  <link rel="icon" href="./assets/my_images/favicon_io/favicon.ico" sizes="16x16 32x32 48x48">
   <link rel="apple-touch-icon" href="./assets/my_images/favicon_io/apple-touch-icon.png">
   <link rel="manifest" href="./assets/my_images/favicon_io/site.webmanifest">
 
@@ -29,7 +29,11 @@
 
   <header class="site-header">
     <div class="header-inner">
-      <a class="mark" href="#top" aria-label="Panayu Keelawat — back to top">PK</a>
+      <!-- the same artwork as the favicon, so the mark reads identically
+           in the browser tab and in the header -->
+      <a class="mark" href="#top" aria-label="Panayu Keelawat — back to top">
+        <img src="./assets/my_images/favicon_io/favicon.svg" alt="" width="30" height="30">
+      </a>
 
       <nav class="site-nav" data-site-nav>
         <a href="#experience">Experience</a>

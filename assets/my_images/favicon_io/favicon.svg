@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panayu Keelawat">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Panayu Keelawat monogram">
   <title>Panayu Keelawat</title>
-  <rect width="64" height="64" rx="3" fill="#0E3B5C"/>
-  <g fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M15 19V45"/>
-    <path d="M15 19h6a8 8 0 0 1 0 16h-6"/>
-    <path d="M38 19v26"/>
-    <path d="M50.5 19 38 32l12.5 13"/>
+  <!-- "PK" set in Inter (weight 600, optical size 14) and
+       outlined, so the letterforms are the site's own type. Plate
+       fill matches the accent colour (hsl 205 74% 21%). -->
+  <rect width="64" height="64" rx="4" fill="#0E3C5D"/>
+  <g fill="#FFFFFF" transform="translate(6.53 45.00) scale(0.01745 -0.01745)">
+    <path d="M150 0V1490H707Q878 1490 995 1426Q1112 1362 1172 1250Q1232 1139 1232 997Q1232 854 1171 743Q1111 632 993 568Q875 504 703 504H334V724H668Q769 724 833 759Q898 794 928 856Q959 918 959 997Q959 1076 928 1137Q898 1198 833 1232Q768 1266 666 1266H417V0Z"/>
+    <path transform="translate(1382 0)" d="M343 367V620Q391 698 437 766Q484 835 536 902Q589 969 654 1044L1045 1490H1377L745 777L725 784ZM150 0V1490H417V1048L412 689L417 558V0ZM1072 0 598 701 766 902 1387 0Z"/>
   </g>
 </svg>

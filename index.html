@@ -6,42 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Panayu Keelawat — HCI researcher. Ph.D. student at Virginia Tech working on human-centered, AI-enhanced interaction design.">
+  <meta name="theme-color" content="#ffffff">
   <title>Panayu Keelawat</title>
 
-  <link rel="shortcut icon" href="./assets/my_images/favicon_io/favicon.ico" type="image/x-icon">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="icon" href="./assets/my_images/favicon_io/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./assets/my_images/favicon_io/favicon.ico" sizes="32x32">
+  <link rel="apple-touch-icon" href="./assets/my_images/favicon_io/apple-touch-icon.png">
+  <link rel="manifest" href="./assets/my_images/favicon_io/site.webmanifest">
+
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <div class="grain" aria-hidden="true"></div>
-
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header">
-    <a class="mark" href="#top">PK</a>
+    <div class="header-inner">
+      <a class="mark" href="#top" aria-label="Panayu Keelawat — back to top">PK</a>
 
-    <nav class="site-nav" data-site-nav>
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-    </nav>
+      <nav class="site-nav" data-site-nav>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+      </nav>
 
-    <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-    </button>
+      <button class="nav-toggle" data-nav-toggle aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <main id="main">
 
     <section class="hero" id="top">
       <div class="hero-index">
-        <span>Blacksburg, VA</span>
+        <span>Blacksburg, Virginia</span>
+        <span>Ph.D. · Virginia Tech</span>
       </div>
 
       <h1 class="hero-name">
@@ -71,52 +78,16 @@
       </figure>
     </section>
 
-    <section class="about reveal" id="about">
-      <div class="section-head">
-        <span class="section-num">01</span>
-        <h2>About</h2>
-      </div>
-
-      <div class="about-grid">
-        <p class="lede">
-          I'm a Ph.D. student in Computer Science at Virginia Tech, advised by
-          <a href="https://chensivan.github.io/" target="_blank" class="text-link">Prof. Yan Chen</a>.
-          My research explores real-time human–AI collaboration in the
-          context of educational tools that make sense of live learner
-          data.
-        </p>
-
-        <div class="about-notes">
-          <p>
-            During my M.S. at UC San Diego, I worked with
-            <a href="https://hci.ucsd.edu/" target="_blank" class="text-link">Prof. Haijun Xia</a>
-            on natural language interfaces that let people converse with data. I earned my B.Eng. in Computer Engineering from
-            Chulalongkorn University, where I was supervised
-            by <a href="https://www.cp.eng.chula.ac.th/~boonserm/" target="_blank" class="text-link">Prof. Boonserm Kijsirikul</a>
-            on machine learning for brain-computer interfaces.
-          </p>
-
-          <p>
-            I've also shipped production interfaces as a software engineer at
-            Amazon Alexa, on the
-            <a href="https://www.amazon.com/alexa-drop-in-calling-intercom/b?ie=UTF8&node=21393410011" target="_blank" class="text-link">Alexa Comms Calling Experience</a>
-            team, and at LSEG, building DTaaS, a
-            cloud platform for inter-bank FX deal tracking.
-          </p>
-        </div>
-      </div>
-    </section>
-
     <section class="experience reveal" id="experience">
       <div class="section-head">
-        <span class="section-num">02</span>
+        <span class="section-num">01</span>
         <h2>Experience</h2>
       </div>
 
-      <div class="experience-columns">
+      <div class="experience-groups">
 
         <div class="timeline-group">
-          <h3 class="timeline-group-title">Work</h3>
+          <h3 class="timeline-group-title">Employment</h3>
 
           <ol class="timeline">
             <li class="timeline-item">
@@ -157,7 +128,8 @@
               <div class="timeline-body">
                 <h4>Ph.D., Computer Science</h4>
                 <p class="timeline-place">Virginia Tech</p>
-                <p>Human-AI interaction design for real-time learning, collaboration, and debriefing tools.</p>
+                <p class="timeline-advisor">Advised by <a class="text-link" href="https://chensivan.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yan Chen</a></p>
+                <p>Human–AI interaction design for real-time learning, collaboration, and debriefing tools — studying how people and AI think together when educational tools make sense of live learner data.</p>
               </div>
             </li>
 
@@ -166,7 +138,8 @@
               <div class="timeline-body">
                 <h4>M.S., Computer Science</h4>
                 <p class="timeline-place">UC San Diego</p>
-                <p>Natural language interfaces for data analysis workflows.</p>
+                <p class="timeline-advisor">Advised by <a class="text-link" href="https://hci.ucsd.edu/" target="_blank" rel="noopener noreferrer">Prof. Haijun Xia</a></p>
+                <p>Natural language interfaces for data analysis workflows — designing ways for people to converse with data instead of writing queries.</p>
               </div>
             </li>
 
@@ -175,7 +148,8 @@
               <div class="timeline-body">
                 <h4>B.Eng., Computer Engineering</h4>
                 <p class="timeline-place">Chulalongkorn University · First Class Honors</p>
-                <p>Research on brain-computer interfaces and EEG-based emotion recognition.</p>
+                <p class="timeline-advisor">Advised by <a class="text-link" href="https://www.cp.eng.chula.ac.th/~boonserm/" target="_blank" rel="noopener noreferrer">Prof. Boonserm Kijsirikul</a></p>
+                <p>Research on brain–computer interfaces and EEG-based emotion recognition, reading affect from brainwaves during music listening.</p>
               </div>
             </li>
           </ol>
@@ -186,7 +160,7 @@
 
     <section class="publications reveal" id="publications">
       <div class="section-head">
-        <span class="section-num">03</span>
+        <span class="section-num">02</span>
         <h2>Publications</h2>
       </div>
 
@@ -320,7 +294,7 @@
 
     <section class="teaching reveal" id="teaching">
       <div class="section-head">
-        <span class="section-num">04</span>
+        <span class="section-num">03</span>
         <h2>Teaching</h2>
       </div>
 
@@ -378,12 +352,13 @@
   </main>
 
   <footer class="site-footer">
-    <span>© 2026 Panayu Keelawat</span>
+    <span>© <span data-year>2026</span> Panayu Keelawat</span>
     <a href="#top">Back to top ↑</a>
   </footer>
 
-  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script.js" defer></script>
 
 </body>
 
 </html>
+
